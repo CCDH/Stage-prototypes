@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Fancy Dropdown</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <script src="dropdown.js"></script>
+</head>
+
+<body>
+
+<div class="dropdown">
+  <input type="text" id="car-type" value="choose your car type" class="field"
+         readonly="readonly" onmouseover="showElement('menu-id', true);" />
+  <ul class="list" id="menu-id" onmouseleave="showElement('menu-id', false)">
+    <li onclick="setValue('car-type', 'sedan'); showElement('menu-id', false);">
+      <img src="sedan.png" style="max-width: 130px;">Sedan</li>
+    <li onclick="setValue('car-type', 'suv'); showElement('menu-id', false);">
+      <img src="suv.png" style="max-width: 130px;">SUV</li>
+    <li onclick="setValue('car-type', 'hatchback'); showElement('menu-id', false);">
+      <img src="hatchback.png" style="max-width: 130px;">Hatchback</li>
+  </ul>
+</div>
+
+</body>
+</html>
