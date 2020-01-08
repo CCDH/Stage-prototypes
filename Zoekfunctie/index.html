@@ -1,0 +1,48 @@
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autocomplete</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        var jsonList = [
+            {"label": "HP Spectre 13", "description": "lorem", "brand": "HP", "img": "resource/HP.jpg"},
+            {"label": "Asus Spectre 14", "description": "lorem", "brand": "Asus", "img": "resource/Asus.jpg"},
+            {"label": "Acer Spectre 15", "description": "lorem", "brand": "Acer", "img": "resource/Acer.png"}
+        ];
+
+        var jsonListResults = [
+            {"label": "HP 1456"},
+            {"label": "HP 14676"},
+            {"label": "HP 1532"},
+            {"label": "Acer"},
+        ];
+
+        $(document).ready(function () {
+            $.widget("ui.autocomplete", $.ui.autocomplete, {
+                _renderItem: function (ul, item) {
+                    return $("<li>")
+                        .attr("data-value", item.value)
+                        .append($(`<img width="100px" height="100px" src="${item.img}">`))
+                        .append(item.label)
+                        .append('<div class="description">' + item.description + '</div>')
+                        .append('<div class="brand">' +  item.brand + '</div>')
+                        .appendTo(ul);
+                }
+            });
+            $("#producten").autocomplete({
+                source: jsonList,
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="ui-widget">
+    <label class="searchbar" for="producten">producten: </label>
+    <input id="producten">
+    <img id="pic">
+</div>
+</body>
+</html>

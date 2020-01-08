@@ -1,0 +1,111 @@
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filter Productspecificaties</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style type="text/css">
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".toggle-switch").on('change', function() {
+                $(".items").toggle("slow");
+            });
+        });
+    </script>
+</head>
+    <body>
+<h2>Filter Productspecificaties</h2>
+    <div class="container">
+        <div class="filters">
+        	<form method="post" action="#">
+        		<input class="zoeken" type="text" placeholder="Zoeken naar" name=""><br>
+
+                <label for="merk">Merk</label>
+                <br> <select id="merk" name="merk">
+                    <option value="asus">Asus</option>
+                    <option value="lenovo">Lenovo</option>
+                    <option value="hp">HP</option>
+                </select>
+                <br> <label for="besturingssysteem">Besturingssysteem</label>
+                <br><select id="besturingssysteem" name="besturingssysteem">
+                    <option value="macos">MacOsX</option>
+                    <option value="linux">Linux</option>
+                    <option value="windows">Windows</option>
+                </select>
+                <br><label for="processor">Processor</label>
+
+                <br><select id="processor" name="processor">
+                    <option value="i3">Intel Core i3</option>
+                    <option value="i5">Intel Core i5</option>
+                    <option value="i7">Intel Core i7</option>
+                </select>
+                <br> <label for="voorraad">Voorraad</label>
+                <br> <select id="voorraad" name="voorraad">
+                    <option value="ja">Ja</option>
+                    <option value="nee">Nee</option>
+                </select>
+                <br> <label for="resolutie">Resolutie</label>
+                <br><select id="resolutie" name="resolutie">
+                    <option value="1920">1920x1080</option>
+                    <option value="1024">1024x768</option>
+                </select>
+
+                <h4>Intern geheugen (GB)</h4>
+                <input type="range" min="1" max="100" value="50">
+                <br><input class="slidergeheugen" type="text" value="16" name="">
+                <input class="slidergeheugen2" type="text" value="64" name="">
+
+                <h4>Schermdiagonaal</h4>
+                <input type="range" min="1" max="100" value="50">
+                <br><input class="slidergeheugen" type="text" value="10" name="10">
+                <input class="slidergeheugen2" type="text" value="18" name="">
+
+
+
+<br>
+
+
+				<div class="items" style="display: none;">
+
+<br>
+                    <label for="merk">Processorfamilie</label>
+                    <br> <select id="merk" name="merk">
+                    <option value="i5">Intel 8ste generatie Core i5</option>
+                    <option value="i5">Intel 8ste generatie Core i5</option>
+                </select>
+                    <br> <label for="besturingssysteem">Intern geheugentype</label>
+                    <br><select id="besturingssysteem" name="besturingssysteem">
+                    <option value="macos">DDR4-SDRAM</option>
+
+                </select>
+                    <br><label for="processor">Aantal kernen</label>
+                    <br><select id="processor" name="processor">
+                    <option value="2">2-Core</option>
+                    <option value="3">3-Core</option>
+                    <option value="4">4-Core</option>
+                </select>
+                    <br> <label for="voorraad">Toetsenbordindeling</label>
+                    <br> <select id="voorraad" name="voorraad">
+                    <option value="belgië">België</option>
+                    <option value="nederland">Nederland</option>
+                </select>
+
+                    <h4>Intern geheugen (GB)</h4>
+                    <input type="range" min="1" max="100" value="50">
+                    <br><input class="slidergeheugen" type="text" value="16" name="">
+                    <input class="slidergeheugen2" type="text" value="64" name="">
+
+				</div>
+                <label class="switch">
+                    <input type="checkbox" class="toggle-switch">
+                    <span class="slider round"></span>
+                </label>
+        	</form>
+        </div></div>
+    </body>
+</html>

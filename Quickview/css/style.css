@@ -85,6 +85,7 @@ header {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-bottom: -80px;
 }
 header h1 {
   color: #000000;
@@ -265,8 +266,6 @@ header h1 {
 }
 .cd-slider li.selected {
   position: relative;
-  padding-top: 75px;
-  padding-left: 5px;
   z-index: 3;
 }
 .add-content .cd-slider {
@@ -387,7 +386,6 @@ header h1 {
 }
 .cd-item-info .cd-item-action li {
   display: inline-block;
-  margin-right: 1em;
 }
 .cd-item-info .cd-item-action li:first-child {
   margin-left: -4px;
