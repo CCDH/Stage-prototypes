@@ -61,7 +61,7 @@ Binnen de cd-item-info kun je onder andere de informatie die bij de images hoort
 
 ## Installatie
 
-Download via http://velocityjs.org/ de JS file en laad deze in net boven het einde van het </body> element
+Download via http://velocityjs.org/ de JS file en laad deze in net boven het einde van het body element
 
 ## Waar is het mee gemaakt?
 
