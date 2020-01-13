@@ -1,10 +1,10 @@
 
 ## Quickview functionaliteit
 
-Met de code die is geschreven is men in staat om het advies betreft de quickview technisch te realiseren.
+Met de code die is geschreven is men in staat om het advies betreft de quickview technisch te realiseren. Vrij om zelf de vormgeving aan te passen. Het gaat hier puur om de technische realisatie van de functionaliteit.
 
 ## Demo
-Klik binnen de mappenstructuur op GIT naar de index.html en open deze in de browser. De rest wijst zijn eigen.
+Klik binnen de mappenstructuur op GIT naar de index.html en open deze in de browser. De rest wijst zichzelf.
 
 ## Code voorbeeld
 Om de quickview functionaliteit te gebruiken moet eerst de de volgende JS file bovenaan de HTML worden ingeladen.
