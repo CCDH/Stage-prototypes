@@ -1,0 +1,101 @@
+#producten {
+    width: 500px;
+    height: 40px;
+    background-color: #F4F9FD;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    padding-left: 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.description{
+    font-family: "Open Sans", sans-serif;
+    width: 450px;
+    display: block;
+    font-size: 12px;
+
+}
+
+.image{
+margin-top: 10px;
+    display: inline-block;
+    height: 70px;
+    width: 90px;
+}
+
+.brand {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    display: block;
+}
+
+.label{
+    font-family: "Verdana";
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+}
+
+.ui-widget{
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+ul li{
+    list-style: none !important;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+button {
+    width: 50px;
+    padding: 10px;
+    height: 45px;
+    background: linear-gradient(135deg,#0082ca 0,#58babc 100%);
+    color: white;
+    font-size: 17px;
+    border-radius: 8px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+}
+
+header .logo svg{
+    height: 35px;
+    margin-left: 25px;
+    margin-top: 10px;
+
+}
+
+.listappend{
+display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+ul{
+    margin-top:150px;
+    width: 570px;
+    height: 250px;
+    border-radius: 8px;
+    border-left: none; /* Prevent double borders */
+    background-color: #F4F9FD;
+    z-index: 1;
+}
+
+.ui-helper-hidden-accessible{
+    display: none;
+}
+
+.ui-menu ui-widget ui-widget-content ui-autocomplete ui-front{
+    margin-top: 100px;
+}
+
+.imgclass{
+    height: 75px;
+    width: 75x;
+}
