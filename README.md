@@ -1,14 +1,14 @@
 # Wat is dit voor een project?
-Het gaat hier om de prototypes die gemaakt zijn gedurende het afstuderen bij Acknowledge. Deze prototypes zijn op basis van eerder ontworpen wireframes en designs.Deze moeten een visueel beeld geven van hoe deze eruit zouden kunnen komen te zien wanneer deze geimplementeerd worden binnen de webshop.
+Voor het afstudeerproject zijn er een aantal adviezen uit het adviesplan omgezet in kleine prototypes die laten zien hoe de functionaliteit ervan technisch te realiseren is.
 
 # Welke programma's zijn er gebruikt om de prototypes mogelijk te maken?
 - HTML
 - CSS
 - Javascript
-- Verschillende library's die online beschikbaar waren om de prototypes te kunnen realiseren
+- Library's
 
 # Versiebeheer
-Er wordt gebruik gemaakt van Gitkraken om de vorderingen in te zien en te bekijken.
+Er is gebruik gemaakt van GitKraken om de wijzigingen die zijn gedaan bij te houden.
 
 # Wat moet je weten?
-Je kunt simpelweg de index.html pagina openen en vervolgens door navigeren naar de andere aangemaakte pagina's van mijn portfolio.
+Omdat het hiet gaat om een aantal voorbeelden zijn deze in verschillende mappen onderverdeeld. Er kan simpelweg op de map geklikt worden om vervolgens de Readme.md te openen voor nadere uitleg over de code. Open de index.html om de pagina te kunnen openen.
