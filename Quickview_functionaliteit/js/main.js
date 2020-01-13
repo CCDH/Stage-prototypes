@@ -1,10 +1,10 @@
 jQuery(document).ready(function($){
-	//final width --> this is the quick view image slider width
-	//maxQuickWidth --> this is the max-width of the quick-view panel
+	//Maximale breedte
+	//Maximale breedte van de quickview
 	var sliderFinalWidth = 400,
 		maxQuickWidth = 900;
 
-	//open the quick view panel
+	//Deze functie opent het quickview paneel
 	$('.cd-trigger').on('click', function(event){
 		var selectedImage = $(this).parent('.cd-item').children('img'),
 			slectedImageUrl = selectedImage.attr('src');
@@ -12,30 +12,28 @@ jQuery(document).ready(function($){
 		$('body').addClass('overlay-layer');
 		animateQuickView(selectedImage, sliderFinalWidth, maxQuickWidth, 'open');
 
-		//update the visible slider image in the quick view panel
-		//you don't need to implement/use the updateQuickView if retrieving the quick view data with ajax
+		//Hiermee update je de foto in het quickview paneel
 		updateQuickView(slectedImageUrl);
 	});
 
-	//close the quick view panel
+	//Deze functie zorgt ervoor dat je het quickview menu weer kunt sluiten
 	$('body').on('click', function(event){
 		if( $(event.target).is('.cd-close') || $(event.target).is('body.overlay-layer')) {
 			closeQuickView( sliderFinalWidth, maxQuickWidth);
 		}
 	});
 	$(document).keyup(function(event){
-		//check if user has pressed 'Esc'
+		//Deze functie bekijkt of je op de escape knop hebt gedruk
     	if(event.which=='27'){
 			closeQuickView( sliderFinalWidth, maxQuickWidth);
 		}
 	});
 
-	//quick view slider implementation
 	$('.cd-quick-view').on('click', '.cd-slider-navigation a', function(){
 		updateSlider($(this));
 	});
 
-	//center quick-view on window resize
+	//Deze functie zorgt ervoor dat de quickview in het midden van het scherm komt wanneer deze een ander formaat aanneemt.
 	$(window).on('resize', function(){
 		if($('.cd-quick-view').hasClass('is-visible')){
 			window.requestAnimationFrame(resizeQuickView);
@@ -69,7 +67,7 @@ jQuery(document).ready(function($){
 		var close = $('.cd-close'),
 			activeSliderUrl = close.siblings('.cd-slider-wrapper').find('.selected img').attr('src'),
 			selectedImage = $('.empty-box').find('img');
-		//update the image in the gallery
+		//update van de afbeeldingen in de gallerij
 		if( !$('.cd-quick-view').hasClass('velocity-animating') && $('.cd-quick-view').hasClass('add-content')) {
 			selectedImage.attr('src', activeSliderUrl);
 			animateQuickView(selectedImage, finalWidth, maxQuickWidth, 'close');
@@ -79,8 +77,7 @@ jQuery(document).ready(function($){
 	}
 
 	function animateQuickView(image, finalWidth, maxQuickWidth, animationType) {
-		//store some image data (width, top position, ...)
-		//store window data to calculate quick view panel position
+		//hier slaat die de aangemaakte gegevens in op van het quickview paneel
 		var parentListItem = image.parent('.cd-item'),
 			topSelected = image.offset().top - $(window).scrollTop(),
 			leftSelected = image.offset().left,
@@ -95,31 +92,31 @@ jQuery(document).ready(function($){
 			quickViewLeft = (windowWidth - quickViewWidth)/2;
 
 		if( animationType == 'open') {
-			//hide the image in the gallery
+			//dit zorgt ervoor dat de afbeelding niet meer zichtbaar is
 			parentListItem.addClass('empty-box');
-			//place the quick view over the image gallery and give it the dimension of the gallery image
+			//plaats de snelle weergave over de afbeeldingengalerij en geef deze de dimensie van de afbeeldingen
 			$('.cd-quick-view').css({
 			    "top": topSelected,
 			    "left": leftSelected,
 			    "width": widthSelected,
 			}).velocity({
-				//animate the quick view: animate its width and center it in the viewport
-				//during this animation, only the slider image is visible
+				//Hiermee kun je de animatie van de quickview bepalen
+				//Gedurende deze animatie is alleen de afbeelding zichtbaar
 			    'top': finalTop+ 'px',
 			    'left': finalLeft+'px',
 			    'width': finalWidth+'px',
 			}, 1000, [ 400, 20 ], function(){
-				//animate the quick view: animate its width to the final value
+				//animatie van de quickview animatie. Hier geef je hem een maximale breedte
 				$('.cd-quick-view').addClass('animate-width').velocity({
 					'left': quickViewLeft+'px',
 			    	'width': quickViewWidth+'px',
 				}, 50, 'ease' ,function(){
-					//show quick view content
+					//laat de quickview content zien die in de html wordt aangemaakt
 					$('.cd-quick-view').addClass('add-content');
 				});
 			}).addClass('is-visible');
 		} else {
-			//close the quick view reverting the animation
+			//Wanneer de quickview gesloten wordt doet deze dezelfde animatie bij het terug inklappen
 			$('.cd-quick-view').removeClass('add-content').velocity({
 			    'top': finalTop+ 'px',
 			    'left': finalLeft+'px',
