@@ -1,14 +1,39 @@
-# Wat is dit voor een project?
-Het gaat hier om de prototypes die gemaakt zijn gedurende het afstuderen bij Acknowledge. Deze prototypes zijn op basis van eerder ontworpen wireframes en designs.Deze moeten een visueel beeld geven van hoe deze eruit zouden kunnen komen te zien wanneer deze geimplementeerd worden binnen de webshop.
 
-# Welke programma's zijn er gebruikt om de prototypes mogelijk te maken?
-- HTML
-- CSS
-- Javascript
-- Verschillende library's die online beschikbaar waren om de prototypes te kunnen realiseren
+## Voorbeeld van het advies voor de zoekfunctie
 
-# Versiebeheer
-Er wordt gebruik gemaakt van Gitkraken om de vorderingen in te zien en te bekijken.
+Uit onderzoek kon geconcludeerd worden dat de huidige zoekfunctie niet goed werd ontvangen en dat deze qua functionaliteit gebruiksvriendelijker gemaakt kan worden. 
 
-# Wat moet je weten?
-Je kunt simpelweg de index.html pagina openen en vervolgens door navigeren naar de andere aangemaakte pagina's van mijn portfolio.
+## Demo
+Klik binnen de mappenstructuur op GIT naar de index.html en open deze in de browser. De rest wijst zichzelf.
+
+## Code voorbeeld
+Om de functionaliteit te gebruiken moet eerst jquery en de main.js bovenaan de HTML worden ingeladen.
+```
+
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+	
+```
+
+```
+
+```
+
+## Waar is het mee gemaakt?
+
+HTML
+CSS
+Javascript
+
+## Auteur
+<b>Camiel de Hoogt</b> - [GitHub](https://github.com/CCDH)
