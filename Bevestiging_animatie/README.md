@@ -1,7 +1,7 @@
 
 ## Bevestiging animatie
 
-Met de code die is geschreven is men in staat om het advies betreft de animatie bij bevestiging invullen contactformulier te realiseren. Vrij om zelf de vormgeving aan te passen. Het gaat hier puur om de technische realisatie van de functionaliteit.
+Met de code die is geschreven is men in staat om het advies betreft de animatie bij bevestiging invullen contactformulier te realiseren. Dit zorgt voor een stukje gebruiksvriendelijkheid in die zin dat de gebruiker een bevestiging krijgt en weet dat deze verstuurd is. Vrij om zelf de vormgeving aan te passen. Het gaat hier puur om de technische realisatie van de functionaliteit.
 
 ## Demo
 Klik binnen de mappenstructuur op GIT naar de index.html en open deze in de browser. De rest wijst zichzelf.
